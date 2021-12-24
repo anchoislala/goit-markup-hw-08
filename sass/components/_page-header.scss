@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@import './logo';
+@import './mobile-menu';
+@import './site-nav';
+@import './site-auth';
