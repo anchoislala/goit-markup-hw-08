@@ -110,15 +110,19 @@
   align-content: center;
 }
 
-.social-media__item + .social-media__item::before {
-  content: '';
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.social-media__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
 }
 
 .social-media__link {
   display: block;
   color: $accent-color;
-  padding: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
