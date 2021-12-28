@@ -1,6 +1,12 @@
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &__container {
     @media screen and (min-width: 768px) {
       display: flex;
